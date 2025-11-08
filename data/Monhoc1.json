@@ -1,0 +1,28 @@
+{
+    "Mon": "Tên môn học",
+    "QA": [
+        {
+            "Q": "Câu hỏi trắc nghiệm thông thường",
+            "A": "Đáp án A", 
+            "B": "Đáp án B",
+            "C": "Đáp án C", 
+            "D": "Đáp án D",
+            "True": "A"
+        },
+        {
+            "Q": "Câu hỏi trả lời ngắn",
+            "type": "short_answer",
+            "correctAnswer": "Đáp án chính xác cần nhập"
+        },
+        {
+            "Q": "Câu hỏi đúng/sai với 4 câu nhỏ",
+            "type": "true_false_set", 
+            "questions": [
+                {"text": "Nội dung câu 1", "correct": true},
+                {"text": "Nội dung câu 2", "correct": false},
+                {"text": "Nội dung câu 3", "correct": true},
+                {"text": "Nội dung câu 4", "correct": false}
+            ]
+        }
+    ]
+}
