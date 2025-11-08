@@ -18,7 +18,7 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Web - 11a1 - LangBiang</title>
+    <title>Quiz App - Trắc Nghiệm Offline</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -47,8 +47,8 @@
 
             <div class="card">
                 <h2>📚 Chọn môn học</h2>
-                <div id="subjectList" class="subject-list">
-                    <!-- Danh sách môn học sẽ được thêm vào đây -->
+                <div id="subjectList" class="compact-subject-list">
+                    <!-- Danh sách môn học dạng compact sẽ được thêm vào đây -->
                 </div>
             </div>
 
@@ -84,25 +84,25 @@
                     </div>
                 </div>
             </div>
-
+    
             <div class="card question-section">
                 <div class="question-content">
                     <h2 id="questionText">Câu hỏi sẽ hiển thị ở đây</h2>
                 </div>
             </div>
-
+    
             <div class="card options-section">
                 <div class="options-container" id="optionsContainer">
                     <!-- Các lựa chọn sẽ được thêm vào đây -->
                 </div>
             </div>
-
+    
             <div class="status-container">
                 <div id="status" class="status">🤔 Đang làm...</div>
             </div>
-
+    
             <div class="card navigation-section">
-                <div class="navigation">
+                <div class="navigation desktop-navigation">
                     <button id="prevBtn" class="btn-secondary">
                         <span>◀ Trước</span>
                     </button>
@@ -111,6 +111,24 @@
                     </button>
                     <button id="nextBtn" class="btn-secondary">
                         <span>Tiếp theo ▶</span>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Mobile Navigation - ĐÃ DI CHUYỂN VÀO TRONG CONTAINER -->
+            <div class="mobile-navigation">
+                <div class="mobile-nav-buttons">
+                    <button id="mobilePrevBtn" class="mobile-nav-btn prev">
+                        <span class="mobile-nav-icon">◀</span>
+                        <span>Trước</span>
+                    </button>
+                    <button id="mobileCheckBtn" class="mobile-nav-btn check">
+                        <span class="mobile-nav-icon">✅</span>
+                        <span>Kiểm tra</span>
+                    </button>
+                    <button id="mobileNextBtn" class="mobile-nav-btn next">
+                        <span class="mobile-nav-icon">▶</span>
+                        <span>Tiếp</span>
                     </button>
                 </div>
             </div>
